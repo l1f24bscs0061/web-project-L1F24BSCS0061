@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Netflix-inspired student streaming site">
+    <title>Netflix Inspired | Watch TV Shows and Movies</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo" aria-label="Netflix-inspired home">NETFLIX</a>
+        <nav aria-label="Site navigation">
+            <a href="index.html" class="current">Home</a>
+            <a href="media.html">Movies &amp; TV</a>
+            <a href="register.html" class="sign-in">Sign In</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Unlimited movies, TV shows, and more</h1>
+                <p class="hero-price">Starts at a price that fits your entertainment budget.</p>
+                <p class="hero-subtitle">Ready to watch? Enter your email to create or restart your membership.</p>
+                <form class="email-form" action="register.html" method="get">
+                    <label class="visually-hidden" for="email">Email address</label>
+                    <input id="email" name="email" type="email" placeholder="Email address" required>
+                    <button type="submit">Get Started <span aria-hidden="true">❯</span></button>
+                </form>
+            </div>
+        </section>
+        <div class="curve" aria-hidden="true"></div>
+        <section class="trending" aria-labelledby="trending-heading">
+            <div class="content-width">
+                <h2 id="trending-heading">Trending Now</h2>
+                <div class="poster-row">
+                    <a class="poster" href="media.html" aria-label="Browse action movies"><span class="rank">1</span><img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="Oppenheimer film poster"><span class="poster-name">Oppenheimer</span></a>
+                    <a class="poster" href="media.html" aria-label="Browse science fiction"><span class="rank">2</span><img src="https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" alt="Dune film poster"><span class="poster-name">Dune</span></a>
+                    <a class="poster" href="media.html" aria-label="Browse adventure movies"><span class="rank">3</span><img src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="The Dark Knight film poster"><span class="poster-name">The Dark Knight</span></a>
+                    <a class="poster" href="media.html" aria-label="Browse drama movies"><span class="rank">4</span><img src="https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg" alt="Doctor Strange film poster"><span class="poster-name">Doctor Strange</span></a>
+                    <a class="poster" href="media.html" aria-label="Browse featured movies"><span class="rank">5</span><img src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" alt="Parasite film poster"><span class="poster-name">Parasite</span></a>
+                </div>
+            </div>
+        </section>
+        <section class="reasons content-width" aria-labelledby="reasons-heading">
+            <h2 id="reasons-heading">More Reasons to Join</h2>
+            <div class="reasons-grid">
+                <article class="reason"><h3>Enjoy on your TV</h3><p>Watch on smart TVs, game consoles, and streaming devices.</p><span aria-hidden="true">▣</span></article>
+                <article class="reason"><h3>Download your shows</h3><p>Save your favorites and always have something to watch.</p><span aria-hidden="true">↓</span></article>
+                <article class="reason"><h3>Watch everywhere</h3><p>Stream on your phone, tablet, laptop, and TV.</p><span aria-hidden="true">⌁</span></article>
+                <article class="reason"><h3>Create profiles</h3><p>Discover entertainment that fits every viewer.</p><span aria-hidden="true">☺</span></article>
+            </div>
+        </section>
+        <section class="faq content-width" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently Asked Questions</h2>
+            <details><summary>What is this website?</summary><p>This is a student-made, Netflix-inspired front-end project for learning HTML and CSS.</p></details>
+            <details><summary>How much does it cost?</summary><p>This demonstration does not sell subscriptions or process payments.</p></details>
+            <details><summary>Where can I watch?</summary><p>Explore the Movies &amp; TV page to see media samples and information.</p></details>
+            <details><summary>How do I join?</summary><p>Visit the registration page to try a sample HTML form.</p></details>
+            <div class="bottom-cta"><p>Ready to explore? Enter your email to continue.</p><form class="email-form" action="register.html" method="get"><label class="visually-hidden" for="email-bottom">Email address</label><input id="email-bottom" name="email" type="email" placeholder="Email address" required><button type="submit">Get Started ❯</button></form></div>
+        </section>
+    </main>
+    <footer class="footer content-width"><p>Netflix-inspired educational demo — not affiliated with Netflix.</p><div><a href="index.html">Home</a><a href="media.html">Movies &amp; TV</a><a href="register.html">Register</a><a href="#reasons-heading">More Reasons</a></div><p>Assignment 1 · HTML &amp; CSS</p></footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Netflix Inspired</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="index.html">NETFLIX</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="media.html">Movies &amp; TV</a>
+            <a href="register.html">Sign In</a>
+            <a href="#extra-fields">Extra Fields</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-area">
+            <div class="login-box">
+                <h1>Enter your info to sign in</h1>
+                <p class="subtitle">Or get started with a new account.</p>
+
+                <form action="#extra-fields" method="get">
+                    <label for="login-email">Email or mobile number</label>
+                    <input type="text" id="login-email" name="identity"
+                           placeholder="Email or mobile number" minlength="5" required>
+                    <button type="submit">Continue</button>
+                </form>
+
+                <details class="help">
+                    <summary>Get Help</summary>
+                    <p>This is a student project. No real account is created.</p>
+                </details>
+                <p class="notice">Educational demo only. Do not enter real passwords.</p>
+            </div>
+        </section>
+
+        <section class="extra-section" id="extra-fields">
+            <details class="extra-details">
+                <summary>Additional Profile Settings (Assignment Fields)</summary>
+                <p class="description">These fields demonstrate the HTML form features required by the assignment.</p>
+
+                <form class="profile-form">
+                    <fieldset>
+                        <legend>Account Information</legend>
+                        <label for="full-name">Name</label>
+                        <input id="full-name" type="text" minlength="3" maxlength="40" required placeholder="Your name">
+
+                        <label for="email">Email</label>
+                        <input id="email" type="email" required placeholder="you@example.com">
+
+                        <label for="password">Demo Password (do not use a real password)</label>
+                        <input id="password" type="password" minlength="8" maxlength="30" required placeholder="8 characters minimum">
+
+                        <label for="birthday">Date of Birth</label>
+                        <input id="birthday" type="date" min="1900-01-01" max="2026-10-19">
+
+                        <label for="profile-id">Profile ID (readonly)</label>
+                        <input id="profile-id" type="text" value="DEMO-001" readonly>
+                    </fieldset>
+
+
+                    <p class="description">This is only a form demonstration. No information is submitted or saved.</p>
+                </form>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <p>Netflix-inspired student project. Not affiliated with Netflix.</p>
+        <p>Future pages: Services | Portfolio | Contact</p>
+    </footer>
+</body>
+</html>

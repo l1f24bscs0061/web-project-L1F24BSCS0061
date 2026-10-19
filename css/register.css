@@ -1,0 +1,242 @@
+/* Registration page: basic CSS selectors and form states */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header {
+    background: #310b0d;
+    padding: 24px 5%;
+    border-bottom: 1px solid #5c3335;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.header nav a {
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+.header nav a:hover {
+    color: #ff626b;
+}
+
+.login-area {
+    min-height: 540px;
+    background: linear-gradient(#3a1114, #150203);
+    padding: 48px 20px 75px;
+}
+
+.login-box {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.login-box h1 {
+    font-size: 36px;
+    margin: 0 0 12px;
+}
+
+.subtitle {
+    color: #c2b8b9;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.login-box form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-box form input {
+    display: block;
+    width: 100%;
+    padding: 22px 18px;
+    font-size: 18px;
+    background: #201819;
+    border: 1px solid #777;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 17px;
+    border: 0;
+    border-radius: 4px;
+    background: #e50914;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #b80710;
+}
+
+.help {
+    margin-top: 55px;
+    font-size: 18px;
+}
+
+.help summary {
+    cursor: pointer;
+}
+
+.help p, .notice {
+    color: #a89c9e;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.notice {
+    margin-top: 45px;
+}
+
+.extra-section {
+    padding: 35px 20px 65px;
+    background: #090909;
+}
+
+.extra-details {
+    max-width: 650px;
+    margin: auto;
+    background: #171717;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 22px;
+}
+
+.extra-details > summary {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.description {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.profile-form fieldset {
+    border: 1px solid #444;
+    margin-top: 22px;
+    padding: 18px;
+}
+
+.profile-form legend {
+    font-weight: bold;
+}
+
+.profile-form label:not(.choice) {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 7px;
+}
+
+.profile-form input:not([type=radio]):not([type=checkbox]):not([type=color]):not([type=range]),
+.profile-form select,
+.profile-form textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #252525;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+
+.profile-form input[type=color] {
+    width: 65px;
+    height: 40px;
+}
+
+.profile-form input[type=range] {
+    display: block;
+    width: 100%;
+}
+
+.profile-form .choice {
+    display: inline-block;
+    margin: 4px 20px 8px 0;
+}
+
+.profile-form input:focus,
+.profile-form select:focus,
+.profile-form textarea:focus {
+    outline: 2px solid #e50914;
+}
+
+.profile-form input:required:valid {
+    border-left: 3px solid #4caf50;
+}
+
+.profile-form input:required:invalid {
+    border-left: 3px solid #e50914;
+}
+
+.profile-form input[readonly],
+.profile-form input:disabled {
+    opacity: 0.6;
+}
+
+.profile-form input::placeholder {
+    color: #aaa;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #aaa;
+    font-size: 13px;
+    border-top: 1px solid #333;
+}
+
+@media (max-width: 650px) {
+.header {
+        display: block;
+    }
+
+.header nav {
+        margin-top: 16px;
+    }
+
+.header nav a {
+        display: inline-block;
+        margin: 6px 12px 6px 0;
+    }
+
+.login-box h1 {
+        font-size: 28px;
+    }
+
+.subtitle {
+        font-size: 18px;
+    }
+
+}
